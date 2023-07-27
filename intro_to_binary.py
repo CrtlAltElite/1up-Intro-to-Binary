@@ -28,10 +28,12 @@ print(bin(255))    # 0b 11111111              ^MAX Byte
 print(bin(256))    # 0b 100000000       *
 print(bin(512))    # 0b 1000000000      *
 print(bin(1023))   # 0b 111111111     
-print(bin(1024))   # 0b 10000000000      *   
+print(bin(1024))   # 0b 1000000000      *   
 #  32 bits is 4 bytes
 print(bin(2147483647)) #0b 0111 1111 1111 1111 1111 1111 1111 1111   ^Max in 32-bit signed
-    #  Binary Literal Ob prefix 
+print(bin(4294967295))  # 0b 11111111111111111111111111111111 ^Max in 32-bit unsigned
+
+    #  Binary Literal 0b prefix 
 # HeXidecimal Literal 0x prefix
 
 print(hex(0))  #0x0

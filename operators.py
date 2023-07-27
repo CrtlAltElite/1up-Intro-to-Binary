@@ -11,6 +11,21 @@
 print(13 & 11)
 print(0b1101 & 0b1011)
 
+# Identity Element: If A is any binary number, 
+#   then A & 1...1 (a series of 1s of the same length as A) = A.
+#   The binary number with all bits as 1 acts as the identity.
+
+# Annihilator Element: A & 0...0 = 0...0 (for any A). 
+#   The binary number with all bits as 0 will yield 0 
+#   when AND-ed with any other number.
+
+# Idempotent Property: A & A = A.
+
+# Commutative Property: A & B = B & A.
+
+# Associative Property: A & (B & C) = (A & B) & C.
+
+
 
 ### 2. Bitwise OR (`|`):
 # This takes two binary numbers and returns a new number
@@ -24,6 +39,19 @@ print(0b1101 & 0b1011)
 
 print(13 | 11)
 print(0b1101 | 0b1011)
+
+# Identity Element: If A is any binary number, then A | 0...0 = A. 
+#   The binary number with all bits as 0 acts as the identity.
+
+# Annihilator Element: A | 1...1 = 1...1 (for any A). 
+#   The binary number with all bits as 1 will yield 1s when OR-ed with any other number.
+
+# Idempotent Property: A | A = A.
+
+# Commutative Property: A | B = B | A.
+
+# Associative Property: A | (B | C) = (A | B) | C.
+
 
 
 ### 3. Bitwise XOR (`^`):
@@ -40,6 +68,22 @@ print(0b1101 | 0b1011)
 
 print(13 ^ 11)
 print(0b1101 ^ 0b1011)
+# Identity Element: If A is any binary number, then A ^ 0...0 = A.
+
+# Annihilator Element: There's no annihilator for XOR. 
+#   XOR-ing with any constant value doesn't always result in a constant outcome.
+
+# Idempotent Property: A ^ A = 0...0.
+
+# Commutative Property: A ^ B = B ^ A.
+
+# Associative Property: A ^ (B ^ C) = (A ^ B) ^ C.
+
+# Inverse: The inverse of a bit under XOR is itself.
+#   Meaning, if B is the inverse of A, then A ^ B = 0...0. 
+#   But since A ^ A = 0...0, B must be equal to A.
+
+
 
 
 ### 4. Bitwise NOT (`~`):
@@ -55,6 +99,12 @@ print(0b1101 ^ 0b1011)
 # But due to two complement in python what we will actually get is ... -x-1
 print(~0b1101)
 print(-13-1)
+
+# Inverse Property: If A is any binary number, then ~(~A) = A. 
+# This means applying NOT twice brings you back to the original number.
+
+
+
 ### 5. Left Shift (`<<`):
 
 #  This takes a binary number and shifts all its bits to the left by
@@ -83,3 +133,12 @@ print(0b1101<<1)
 
 print(13>>1)
 print(0b1101>>1)
+
+
+# Identity: Shifting by 0 doesn't change the number: A << 0 = A and A >> 0 = A.
+
+# Associativity of Shift Amounts: (A << B) << C = A << (B + C) 
+#   and (A >> B) >> C = A >> (B + C).
+
+# Note: Shifting doesn't have a commutative property. 
+#   For example, A << B is generally not the same as B << A.

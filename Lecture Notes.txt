@@ -5,12 +5,16 @@ Tangible Example: Imagine two lineups of light switches. Only if both correspond
 
 Usefulness: The AND operation can be used to mask certain bits, i.e., to selectively set certain bits to 0. For instance, in computer graphics, a common operation might be to extract a specific color channel from a pixel by "masking" out other channels.
 
+
+
 2. Bitwise OR (|):
 Operation: If at least one of the corresponding bits in the input numbers is 1, the result bit is set to 1.
 
 Tangible Example: Again, imagine two lineups of light switches. If any one or both of the corresponding switches are ON, the resulting light will be ON.
 
 Usefulness: The OR operation can be used to set certain bits to 1 without affecting the other bits. This is often used to combine flags or settings in software.
+
+
 
 3. Bitwise XOR (^):
 Operation: If the corresponding bits in the input numbers are different, the result bit is set to 1.
@@ -19,12 +23,18 @@ Tangible Example: Think of two people comparing their answers to a yes/no questi
 
 Usefulness: XOR can be used for tasks like toggling specific bits or in error correction and cryptography. It also has a neat property where X ^ X = 0, which is useful in certain algorithms, such as finding a unique number in a list.
 
+
+
+
 4. Bitwise NOT (~):
 Operation: This inverts all the bits of a number.
 
 Tangible Example: Imagine a row of light switches. For every switch that's ON, you turn it OFF, and for every switch that's OFF, you turn it ON.
 
 Usefulness: It can be used to negate or complement a number in two's complement arithmetic. Also useful in certain bit manipulation tricks.
+
+
+
 
 5. Left Shift (<<):
 Operation: This shifts all bits of a number to the left by a specified number of positions, filling in the rightmost bits with zeros.
@@ -33,12 +43,20 @@ Tangible Example: Imagine you're looking at a row of sliding blocks. A left shif
 
 Usefulness: Multiplying by powers of 2. Also useful for some optimization tasks and working with data structures like buffers.
 
+
+
+
 6. Right Shift (>>):
 Operation: Shifts all bits of a number to the right by a specified number of positions.
 
 Tangible Example: Using the row of sliding blocks analogy, a right shift slides all blocks to the right by a given number.
 
 Usefulness: Dividing by powers of 2. Useful in algorithms that often deal with halving or partitioning data.
+
+
+
+
+
 
 In the real world, bitwise operations are fundamental in:
 
